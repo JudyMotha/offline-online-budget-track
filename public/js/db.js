@@ -1,4 +1,4 @@
-
+//Refer Nosql miniproject
 
 let db;
 const request = indexedDB.open('budgetTracker', 1);
