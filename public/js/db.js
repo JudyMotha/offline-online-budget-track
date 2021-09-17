@@ -2,7 +2,7 @@
 
 let db;
 const request = indexedDB.open('budgetTracker', 1);
-
+//create object store called budgetdtore and set autoIncrement to true
 request.onupgradeneeded = function(event) {
   const db = event.target.result;
   db.createObjectStore('budgstore', { autoIncrement: true });
@@ -18,7 +18,7 @@ request.onsuccess = function(event) {
 request.onerror = function(event) {
   console.log(event.target.errorCode);
 };
-
+//create ,access,add record
 function saveRecord(record) {
   const transaction = db.transaction(['budgstore'], 'readwrite');
   const transactionObjectStore = transaction.objectStore('budgstore');
