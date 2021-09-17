@@ -70,7 +70,7 @@ self.addEventListener(`fetch`,
       }
       return caches
       .open(RUNTIME_CACHE)
-      .then(cache => fetch(e.request)
+      .then(cache => fetch(evt.request)
       .then(response => cache.put(evt.request, response.clone())
         .then(() => response)
       ));
