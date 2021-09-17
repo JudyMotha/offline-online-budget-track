@@ -23,7 +23,7 @@ self.addEventListener(`install`,
       .then(self.skipWaiting())
   );
 });
-
+//ACT
 self.addEventListener(`activate`,
                       (evt) => {
   const currentCaches = [PRE_CACHE, RUNTIME_CACHE];
@@ -43,7 +43,7 @@ self.addEventListener(`activate`,
       .then(() => self.clients.claim())
   );
 });
-
+//FETCH
 self.addEventListener(`fetch`,
                       (evt) => {
   if (evt.request.method !== `GET` || !e.request.url.startsWith(self.location.origin)) {
@@ -53,7 +53,7 @@ self.addEventListener(`fetch`,
 
   if (evt.request.url.includes(`/api/transaction`)) {
     evt.respondWith(caches.open(RUNTIME_CACHE)
-      .then(cache => fetch(e.request)
+      .then(cache => fetch(evt.request)
         .then(response => {cache.put(evt.request, response.clone());
           return response;
         })
