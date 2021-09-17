@@ -1,1 +1,4 @@
 # offline-online-budget-track
+* The main concept is  about storing expense transactions online -offline ;The mongo DB here is budget and its table is  transactions.When you add and subract funds with app online the entries move into mongo DB ;Once you go offline and make transactions they take the place in indexedDB storage  and not Atlas MongoDB;Once you uncheck offline mode and make an online transaction all recent offline and online transactions are stored in Atlas Mongo .
+* Challenges -Many which I have come across and solved on my own -including local host issues ,Heroku deployment where Stackoverflow and other google search /forums helped.
+* Thanks to my tutor Alexis San Javier for helping me with HW especially when GHcode changes  would not get get deployed to Heroku;Helping me with concepts of multiple times deleting cache ,unregister service worker to make deployment/HW work
