@@ -43,21 +43,18 @@ function checkDatabase() {
         }
       })
         .then(response => response.json())
-        .then(serverResponse => {
-          if (serverResponse.message) {
-            throw new Error(serverResponse);
-          }
+        .then(() => {
+        if (res.length !== 0) {
 
           const transaction = db.transaction(['budgstore'], 'readwrite');
-          const transactionObjectStore = transaction.objectStore('budgstore');
-          transactionObjectStore.clear();
-        })
-        .catch(err => {
-          console.log(err);
+          const currentStore = transaction.objectStore('budgstore');
+          currentStore.clear();
+        }
+        
         });
     }
   };
 }
 
-// listen for app coming back online
+// 
 window.addEventListener('online', checkDatabase);
