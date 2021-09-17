@@ -3,3 +3,4 @@
 * Challenges -including local host  ,Heroku deployment,Service workerissues  where Stackoverflow and other google search /forums helped.
 * Thanks to my tutor Alexis San Javier for helping me with HW especially when GHcode changes  would not get get deployed to Heroku;Helping me with concepts of multiple times deleting cache and  various storages/dropping collections  ,unregistering  service worker to make deployment/HW work.A Big Learning for me here
 * Budget icons have a  warning message .Cache is sometime behaving crazy .Instead of 2 cache files -sometime the heroku shows one consolidated (toggle).
+* Still under work
