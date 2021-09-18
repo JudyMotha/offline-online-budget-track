@@ -13,7 +13,7 @@ const FILES_TO_CACHE = [
   "/service-worker.js"
 
 ];
-//INSTALL ACTIVATE FETCH CYCLES
+//INSTALL ACTIVATE FETCH CYCLES -REFER SERVICE WORKER ACTIVITIES -CLASS LESSONS
 self.addEventListener(`install`, 
                       (evt) => {
   evt.waitUntil(
