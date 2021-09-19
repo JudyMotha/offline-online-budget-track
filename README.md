@@ -15,4 +15,5 @@ all recent offline and online transactions are in Atlas Mongo DB .The offline an
 
 <img src="./BTRackerCache.gif">
 
+* The Tracker
 <img src="./GraphicalTrack.JPG">
