@@ -14,3 +14,5 @@ all recent offline and online transactions are in Atlas Mongo DB .The offline an
 * Cache Storage components
 
 <img src="./BTRackerCache.gif">
+
+<img src="./GraphicalTrack.JPG">
