@@ -8,12 +8,3 @@ all recent offline and online transactions are in Atlas Mongo DB .The offline an
 * Deployed GH https://github.com/JudyMotha/offline-online-budget-track
 * DEployed Heroku link  https://secure-garden-58881.herokuapp.com/
 
-* Visuals
-
- <img src="./BTRacker.gif">
-* Cache Storage components
-
-<img src="./BTRackerCache.gif">
-
-* The Tracker
-<img src="./GraphicalTrack.JPG">
